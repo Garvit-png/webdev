@@ -15,6 +15,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
 //************ Hoisting ^^^^^^^^^^^^^^
 
 //jab js mein ek variable ko bnate hai toh voh 2 parts mein divide hota hai, uska declare part upr chla jata hai and intiliase wala part niche aa jata hai 

@@ -61,3 +61,49 @@ var a = 12;
 
 var a = undefined; //upr
 a=12; //niche
+
+
+//var -> hoist -> undefined
+//let -> hoist -> x
+//const -> hoist -> x
+
+
+
+//=========================Types of data types==========================
+
+//primitive - jisme bracket nahi aati           //reference - jisme bracket aati hai
+
+
+//===Data ke types
+
+// 12 true harsh [] {} () null undefined Nan Symbol bigInt
+
+
+// primities -> jo bne bnaye aate hai and hm unhe copy kr skte hai , and copy krne pe ek real copy mil jaaye
+
+
+
+// refernce - inko copy karne pr ral copy nahi milegi but aapko refernce milega parent ka
+
+let a = 12; //primitive 
+let b = a; // copy hai lekin a mein jo change kro , b mein nahi hega, a ki mummy ne 12 ko ps5 dilaya, lekin b ke 12 ko thodi dilagya, 
+
+//=====now take a look on reference types
+
+let array1=[1,2,3]; 
+let array2 = array1; //yaha pe array copy nahi hogi , refernce milega, ab agar aap array1 mein ek bhi element change kro , toh array2 mein bhi change ho jayega bcz dono same memory address pe  
+
+// meri gaadi aaj se tumhari bhi hai, tumne khud ki gaadi tod di, meri bhi toh todi - reference types example   
+
+
+
+
+
+// '' - single quotes
+// "" - double quotes
+// `` - backticks 
+
+
+// null ka matlab hai aapne jaan boojh kr koi value nahi di
+
+let selectedStudents = null; //agr aage jaake koi valude dunga, lekin abhi value nahi de paunga toh maine ise null mein inititialise krdiya

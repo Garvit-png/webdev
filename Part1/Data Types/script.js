@@ -39,8 +39,8 @@ var a = 12; //gloabally scopped
 
 }
 
-function abcd(){
-    if (true){
+function abcd() {
+    if (true) {
         var c = 12; // functional scoped
     }
 }
@@ -49,7 +49,7 @@ function abcd(){
 //=======================Temporal Dead Zone============================
 // utna area jitne mein js ko pata hai ki variable exist karta hai par wo aapko value nahi de skta
 
-console.log(naam)
+// console.log(naam)
 
 let naam = "garvit"
 
@@ -60,7 +60,7 @@ let naam = "garvit"
 var a = 12;
 
 var a = undefined; //upr
-a=12; //niche
+a = 12; //niche
 
 
 //var -> hoist -> undefined
@@ -85,12 +85,12 @@ a=12; //niche
 
 // refernce - inko copy karne pr ral copy nahi milegi but aapko refernce milega parent ka
 
-let a = 12; //primitive 
-let b = a; // copy hai lekin a mein jo change kro , b mein nahi hega, a ki mummy ne 12 ko ps5 dilaya, lekin b ke 12 ko thodi dilagya, 
+// let a = 12; //primitive 
+// let b = a; // copy hai lekin a mein jo change kro , b mein nahi hega, a ki mummy ne 12 ko ps5 dilaya, lekin b ke 12 ko thodi dilagya, 
 
 //=====now take a look on reference types
 
-let array1=[1,2,3]; 
+let array1 = [1, 2, 3];
 let array2 = array1; //yaha pe array copy nahi hogi , refernce milega, ab agar aap array1 mein ek bhi element change kro , toh array2 mein bhi change ho jayega bcz dono same memory address pe  
 
 // meri gaadi aaj se tumhari bhi hai, tumne khud ki gaadi tod di, meri bhi toh todi - reference types example   
@@ -107,3 +107,54 @@ let array2 = array1; //yaha pe array copy nahi hogi , refernce milega, ab agar a
 // null ka matlab hai aapne jaan boojh kr koi value nahi di
 
 let selectedStudents = null; //agr aage jaake koi valude dunga, lekin abhi value nahi de paunga toh maine ise null mein inititialise krdiya
+
+
+// undefined - aapne ek variable bnaya , lekin aape use value nahi di , to jo value by default mili voh hai undefined 
+
+let name;
+console.log(name); //undefined
+
+
+
+//===========================Symbol=======================
+
+// symbol - unique imutable value 
+
+// remote diya, khud ka power button chipka diya
+
+//future mein hum koi libraries use karenge ab is case mein un libraries mein kai baar kuch fields hoti hai jinse similar hm bhi bana dete hai aur galti se humaari banaai hui fields us library ki original fields ko change kr deta hai 
+
+let u1 = Symbol("uid")
+
+let u2 = Symbol("uid")
+
+// u1===u2 - false
+
+
+
+
+
+//================+Dynamic typing-------------
+
+// js mein static typing nahi hai and yaha par hai dynamic typing jiska matlab hai aap data ko change kr sakte ho kyunki yaha par dynamic data types 
+
+// mtlb yeh assure nahi hai ki jaise tumne int a = 12 , krditya. fir tum a = true nahi kr skte
+
+// but js mein tum let a = 12 krke a = true kr skte ho bcz you have let var and const , ki chlo maan lo
+
+// js mein quirks hai like ''+"" = ''
+
+//quirks yaad krlo
+
+
+
+
+////=============Type coercion - concept hai jismein aapka ek type automatically covert hojayega
+
+
+
+//=========har value ko truth and false mein tod rkha hai
+
+
+
+// 0 false "" nll undefined nan document.all - yeh sare false hai

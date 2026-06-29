@@ -1,8 +1,8 @@
-let obj = {
-    name: "garvit",
-    age: 19,
-    khaana: "omelete"
-};
+// let obj = {
+//     name: "garvit",
+//     age: 19,
+//     khaana: "omelete"
+// };
 
 obj.age // dot ke sath access hota hai 
 
@@ -72,11 +72,11 @@ obj?.address?.city // error prevent kr sakte hai //important ******
 
 // create an object for a student with name, age and isEnrolled 
 
-let obj = {
-    name: "garvit",
-    age: 19,
-    isEnrolled: true,
-}
+// let obj = {
+//     name: "garvit",
+//     age: 19,
+//     isEnrolled: true,
+// }
 
 
 

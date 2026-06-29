@@ -52,3 +52,31 @@ let obj2 = {...obj}
 // iske sahi krne ke liye deep clone krna pdta hai 
 
 let obj24 = JSON.parse( JSON.stringify(obj))
+
+//==============
+
+
+
+//optional changing 
+
+obj?.address?.city // error prevent kr sakte hai //important ******
+
+/// computed permissions - yeh smjha dena 
+
+
+
+
+// questioins 
+
+
+
+// create an object for a student with name, age and isEnrolled 
+
+let obj = {
+    name: "garvit",
+    age: 19,
+    isEnrolled: true,
+}
+
+
+

@@ -50,7 +50,11 @@ h1.hidden = true   // inspect kholke html kholo
 // attribute - jaise <a href = -> here 'a' is tag and 'href' is attribute
 
 
-// ==================================================================
+
+
+// -----changing link------
+
+
 
 let a = document.querySelector("a")
 // console.dir(a)
@@ -58,3 +62,44 @@ let a = document.querySelector("a")
 // a.href = "https://www.google.com"; // 1st method 
 
 a.setAttribute("href","https://www.google.com"); //another method 
+
+
+
+
+// ----setting image-----
+
+
+let img = document.querySelector("img")
+
+img.setAttribute("src",
+    "https://plus.unsplash.com/premium_photo-1759474988688-227015dfb90e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDUwfENEd3V3WEpBYkV3fHxlbnwwfHx8fHw%3D"
+)
+
+
+
+//----getting the value of a tag------
+
+let aa = document.querySelector("a")
+console.log(aa.getAttribute("href")) // get se value mitli hai 
+
+
+// - remove attribute-----
+
+let aaa = document.querySelector("a");
+aaa.removeAttribute("href")
+
+
+
+//==================================================================
+//                      Dynamic DOM Manuplation
+//===================================================================
+
+
+
+let h1 = document.createElement("h1");
+h1.textContent = "Hello ji";
+// lekin abhi bhi yeh dikhega nahi, because abhi html wala console nahi krwaya 
+
+
+document.body.append(h1); // prepend bhi kar sakte ho 
+document.querySelector("body").append // ese bhi kar sakte ho 

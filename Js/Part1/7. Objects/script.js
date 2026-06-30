@@ -96,6 +96,17 @@ for (let key in obj1) {
 let obj2 = { ...obj1 }; // obj1 ki shallow copy ban gayi
 
 /*
+ * YAAD RAKHNA — Spread vs Rest (same "..." dikhta hai, kaam alag hai):
+ *
+ *   Array/Object mein use karo  -> SPREAD  (failaata hai / copy karta hai)
+ *   Function parameter mein use karo -> REST (collect karta hai sab kuch ek array mein)
+ *
+ * Example:
+ *   let arr = [...arr1];           // SPREAD — copy ban rahi hai
+ *   function f(...args) { }        // REST — saare arguments array mein collect ho rahe
+ */
+
+/*
  * SHALLOW COPY ka matlab:
  *   - TOP LEVEL properties ki real copy milti hai
  *     (change karo copy mein -> original safe rehta hai)
